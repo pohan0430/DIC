@@ -1,0 +1,87 @@
+Information: Building the design 'GATED_OR'. (HDL-193)
+Warning: Cannot find the design 'GATED_OR' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'GATED_OR' in 'Convolution'. (LINK-5)
+Warning: Design 'Convolution' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Convolution
+Version: Q-2019.12
+Date   : Tue Dec 13 21:56:51 2022
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_INVBUF_RVT_TT_08302018
+Wire Load Model Mode: top
+
+  Startpoint: Enable_8_1t_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Out_OFM_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Enable_8_1t_reg/CLK (ASYNC_DFFHx1_ASAP7_75t_R)          0.00       0.00 r
+  Enable_8_1t_reg/QN (ASYNC_DFFHx1_ASAP7_75t_R)          43.63      43.63 f
+  U745/Y (INVxp33_ASAP7_75t_R)                           83.25     126.88 r
+  U2346/Y (NOR3xp33_ASAP7_75t_R)                         50.28     177.17 f
+  DP_OP_42J1_122_5662/U266/CON (FAx1_ASAP7_75t_R)        43.60     220.77 r
+  DP_OP_42J1_122_5662/U262/CON (FAx1_ASAP7_75t_R)        24.98     245.75 f
+  U1073/Y (INVxp33_ASAP7_75t_R)                          34.72     280.47 r
+  DP_OP_42J1_122_5662/U254/SN (FAx1_ASAP7_75t_R)         64.07     344.54 f
+  DP_OP_42J1_122_5662/U249/CON (FAx1_ASAP7_75t_R)        24.63     369.17 r
+  U747/Y (INVxp33_ASAP7_75t_R)                           28.27     397.44 f
+  DP_OP_42J1_122_5662/U238/CON (FAx1_ASAP7_75t_R)        34.92     432.36 r
+  DP_OP_42J1_122_5662/U225/CON (FAx1_ASAP7_75t_R)        33.07     465.43 f
+  DP_OP_42J1_122_5662/U225/SN (FAx1_ASAP7_75t_R)         18.11     483.54 r
+  U1088/Y (INVxp33_ASAP7_75t_R)                          25.55     509.09 f
+  DP_OP_42J1_122_5662/U221/CON (FAx1_ASAP7_75t_R)        34.59     543.68 r
+  DP_OP_42J1_122_5662/U211/CON (FAx1_ASAP7_75t_R)        31.27     574.95 f
+  DP_OP_42J1_122_5662/U198/CON (FAx1_ASAP7_75t_R)        34.47     609.41 r
+  DP_OP_42J1_122_5662/U189/SN (FAx1_ASAP7_75t_R)         57.78     667.20 f
+  U1528/SN (HAxp5_ASAP7_75t_R)                           35.93     703.13 f
+  U1529/Y (NOR2xp33_ASAP7_75t_R)                         16.03     719.16 r
+  U1530/Y (NOR2xp33_ASAP7_75t_R)                         18.52     737.68 f
+  U1532/Y (AND2x2_ASAP7_75t_R)                           22.23     759.90 f
+  U1533/Y (NOR2xp33_ASAP7_75t_R)                         10.12     770.02 r
+  U1534/Y (NOR2xp33_ASAP7_75t_R)                         23.86     793.88 f
+  U1535/Y (MAJIxp5_ASAP7_75t_R)                          30.83     824.71 r
+  U1536/Y (MAJx2_ASAP7_75t_R)                            29.11     853.82 r
+  U763/Y (NAND2xp33_ASAP7_75t_R)                         13.47     867.29 f
+  U755/Y (NAND2xp33_ASAP7_75t_R)                         32.16     899.46 r
+  U1537/Y (MAJIxp5_ASAP7_75t_R)                          26.26     925.71 f
+  U1538/Y (MAJIxp5_ASAP7_75t_R)                          22.63     948.34 r
+  U1540/Y (AND2x2_ASAP7_75t_R)                           21.96     970.31 r
+  U1541/Y (NOR2xp33_ASAP7_75t_R)                         10.23     980.54 f
+  U1542/Y (NOR2xp33_ASAP7_75t_R)                         27.66    1008.20 r
+  U1543/Y (MAJIxp5_ASAP7_75t_R)                          28.86    1037.05 f
+  U1545/Y (MAJIxp5_ASAP7_75t_R)                          26.14    1063.20 r
+  U1546/Y (OR2x2_ASAP7_75t_R)                            22.10    1085.30 r
+  U764/Y (NAND2xp33_ASAP7_75t_R)                          8.16    1093.45 f
+  U1110/Y (NAND2xp33_ASAP7_75t_R)                        26.10    1119.55 r
+  U1557/Y (XOR2xp5_ASAP7_75t_R)                          25.51    1145.06 r
+  U961/Y (NAND2xp33_ASAP7_75t_R)                         10.05    1155.11 f
+  U960/Y (NAND2xp33_ASAP7_75t_R)                         22.25    1177.36 r
+  Out_OFM_reg[18]/D (ASYNC_DFFHx1_ASAP7_75t_R)            0.00    1177.36 r
+  data arrival time                                               1177.36
+
+  clock clk (rise edge)                                2000.00    2000.00
+  clock network delay (ideal)                             0.00    2000.00
+  Out_OFM_reg[18]/CLK (ASYNC_DFFHx1_ASAP7_75t_R)          0.00    2000.00 r
+  library setup time                                    -19.44    1980.56
+  data required time                                              1980.56
+  --------------------------------------------------------------------------
+  data required time                                              1980.56
+  data arrival time                                              -1177.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                      803.20
+
+
+1

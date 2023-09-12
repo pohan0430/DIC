@@ -1,0 +1,44 @@
+Warning: Design 'Convolution' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12
+Date:        Tue Dec 13 21:55:35 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Multiply driven inputs (LINT-6)                                 2
+
+Cells                                                              11
+    Cells do not drive (LINT-1)                                    11
+
+Tristate                                                           10
+    A tristate bus has a non tri-state driver (LINT-34)            10
+--------------------------------------------------------------------------------
+
+Warning: In design 'Convolution', cell 'B_38' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'B_39' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'B_40' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'B_41' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'B_42' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'B_43' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'B_44' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'B_45' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'B_46' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'C1455' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', cell 'C1463' does not drive any nets. (LINT-1)
+Warning: In design 'Convolution', input port 'clk' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'Convolution', input port 'rst_n' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'Convolution', three-state bus 'Enable_weight' has non three-state driver 'B_37/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_9' has non three-state driver 'B_36/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_8' has non three-state driver 'B_35/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_7' has non three-state driver 'B_34/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_6' has non three-state driver 'B_33/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_5' has non three-state driver 'B_32/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_4' has non three-state driver 'B_31/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_3' has non three-state driver 'B_30/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_2' has non three-state driver 'B_29/Z'. (LINT-34)
+Warning: In design 'Convolution', three-state bus 'Enable_1' has non three-state driver 'B_28/Z'. (LINT-34)
+1

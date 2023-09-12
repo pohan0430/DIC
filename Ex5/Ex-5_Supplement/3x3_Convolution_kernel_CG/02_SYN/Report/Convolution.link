@@ -1,0 +1,16 @@
+
+  Linking design 'Convolution'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  Convolution                 /home/mark/TA/lab10/Lab10/EXERCISE/01_RTL/Convolution.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/2019.12/libraries/syn/dw_foundation.sldb
+  asap7sc7p5t_AO_RVT_TT_08302018 (library) /usr/cad/7nm_NLDM/asap7sc7p5t_AO_RVT_TT_08302018.db
+  asap7sc7p5t_OA_RVT_TT_08302018 (library) /usr/cad/7nm_NLDM/asap7sc7p5t_OA_RVT_TT_08302018.db
+  asap7sc7p5t_INVBUF_RVT_TT_08302018 (library) /usr/cad/7nm_NLDM/asap7sc7p5t_INVBUF_RVT_TT_08302018.db
+  asap7sc7p5t_SEQ_RVT_TT_08302018 (library) /usr/cad/7nm_NLDM/asap7sc7p5t_SEQ_RVT_TT_08302018.db
+  asap7sc7p5t_SIMPLE_RVT_TT_08302018 (library) /usr/cad/7nm_NLDM/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db
+
+Information: Building the design 'GATED_OR'. (HDL-193)
+Warning: Cannot find the design 'GATED_OR' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'GATED_OR' in 'Convolution'. (LINK-5)
+0

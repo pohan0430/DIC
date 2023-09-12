@@ -1,0 +1,35 @@
+Warning: Design 'Convolution' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : Convolution
+Version: Q-2019.12
+Date   : Tue Dec 13 21:56:51 2022
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_INVBUF_RVT_TT_08302018 (File: /usr/cad/7nm_NLDM/asap7sc7p5t_INVBUF_RVT_TT_08302018.db)
+    asap7sc7p5t_SIMPLE_RVT_TT_08302018 (File: /usr/cad/7nm_NLDM/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db)
+    asap7sc7p5t_SEQ_RVT_TT_08302018 (File: /usr/cad/7nm_NLDM/asap7sc7p5t_SEQ_RVT_TT_08302018.db)
+
+Number of ports:                          170
+Number of nets:                          3587
+Number of cells:                         3018
+Number of combinational cells:           2827
+Number of sequential cells:               191
+Number of macros/black boxes:               0
+Number of buf/inv:                        373
+Number of references:                      21
+
+Combinational area:               3923.303019
+Buf/Inv area:                      263.139843
+Noncombinational area:            1097.815673
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  5021.118692
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
