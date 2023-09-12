@@ -1,0 +1,1 @@
+irun  ../01_RTL/TESTBED_Adder_4bit.v -define GATE -debug -v /home/willie/DIC-2020-Lab03/NLDM/Verilog/asap7sc7p5t_SIMPLE_RVT_TT_08302018.v  /home/willie/DIC-2020-Lab03/NLDM/Verilog/asap7sc7p5t_SEQ_RVT_TT_08302018.v  /home//willie/DIC-2020-Lab03/NLDM/Verilog/asap7sc7p5t_INVBUF_RVT_TT_08302018.v -nontcglitch

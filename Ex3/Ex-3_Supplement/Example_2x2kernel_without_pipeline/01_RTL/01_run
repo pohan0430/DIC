@@ -1,0 +1,1 @@
+irun TESTBED_example.v  -define RTL -debug  -notimingchecks

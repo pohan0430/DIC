@@ -1,0 +1,3 @@
+irun  TESTBED_Convolution.v -define GATE -debug -v /RAID2/COURSE/DIC/DIC143/hw3/Example_2x2kernel_without_pipeline/03_GATE/asap7sc7p5t_SIMPLE_RVT_TT_08302018.v  /RAID2/COURSE/DIC/DIC143/hw3/Example_2x2kernel_without_pipeline/03_GATE/asap7sc7p5t_SEQ_RVT_TT_08302018.v  /RAID2/COURSE/DIC/DIC143/hw3/Example_2x2kernel_without_pipeline/03_GATE/asap7sc7p5t_INVBUF_RVT_TT_08302018.v -nontcglitch
+--> ?? is the path of corresbonding file, you need to modify the path
+/RAID2/COURSE/DIC/DIC143/hw3/Example_2x2kernel_without_pipeline/03_GATE/

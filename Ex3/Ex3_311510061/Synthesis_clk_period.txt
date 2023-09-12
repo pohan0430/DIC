@@ -1,0 +1,23 @@
+The clock periods I choose to synthesis in the report.
+
+Convolution_without_pipeline:
+
+(1)	set clk_period = 1000.0 ps
+
+(2)	set clk_period = 850.0 ps
+
+(3)	set clk_period = 750.0 ps
+
+(4)	set clk_period = 590.0 ps
+
+Convolution_with_pipeline:
+
+(1)	set clk_period = 1000.0 ps
+
+(2)	set clk_period = 900.0 ps
+
+(3)	set clk_period = 800.0 ps
+
+(4)	set clk_period = 700.0 ps
+
+(5)	set clk_period = 650.0 ps

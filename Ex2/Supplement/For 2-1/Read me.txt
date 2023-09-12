@@ -1,0 +1,2 @@
+1. Please write your code in the "Adder_1bit.sp"
+2. Naming rule: Adder_1bit_CMOS.sp / Adder_1bit_Optimize.sp

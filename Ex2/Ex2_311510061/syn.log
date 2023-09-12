@@ -1,0 +1,504 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version R-2020.09 for linux64 - Aug 26, 2020 
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+#  Set Libraries
+#======================================================
+set search_path {
+       ./        /home/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/ }  # You need to upload the libraries(NLDM) and modify this path for NLDM
+Error: wrong # args: should be "set varName ?newValue?"
+	Use error_info for more info. (CMD-013)
+#set link_library {dw_foundation.sldb }
+set synthetic_library { asap7sc7p5t_AO_RVT_TT_08302018.db asap7sc7p5t_OA_RVT_TT_08302018.db asap7sc7p5t_INVBUF_RVT_TT_08302018.db asap7sc7p5t_SEQ_RVT_TT_08302018.db asap7sc7p5t_SIMPLE_RVT_TT_08302018.db asap7sc7p5t_AO_RVT_TT_08302018.db  asap7sc7p5t_OA_RVT_TT_08302018.db}
+ asap7sc7p5t_AO_RVT_TT_08302018.db asap7sc7p5t_OA_RVT_TT_08302018.db asap7sc7p5t_INVBUF_RVT_TT_08302018.db asap7sc7p5t_SEQ_RVT_TT_08302018.db asap7sc7p5t_SIMPLE_RVT_TT_08302018.db asap7sc7p5t_AO_RVT_TT_08302018.db  asap7sc7p5t_OA_RVT_TT_08302018.db
+set target_library {asap7sc7p5t_INVBUF_RVT_TT_08302018.db asap7sc7p5t_SIMPLE_RVT_TT_08302018.db asap7sc7p5t_SEQ_RVT_TT_08302018.db }         
+asap7sc7p5t_INVBUF_RVT_TT_08302018.db asap7sc7p5t_SIMPLE_RVT_TT_08302018.db asap7sc7p5t_SEQ_RVT_TT_08302018.db 
+#======================================================
+#  Global Parameters
+#======================================================
+set DESIGN "Adder_4bit"
+Adder_4bit
+set MAX_Delay 90
+90
+#======================================================
+#  Read RTL Code
+#======================================================
+read_sverilog {$DESIGN\.v}
+Loading db file '/RAID2/EDA/synopsys/synthesis/2020.09/libraries/syn/gtech.db'
+Loading db file '/RAID2/EDA/synopsys/synthesis/2020.09/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading sverilog file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/Adder_4bit.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Loading db file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_AO_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_OA_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_INVBUF_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_SEQ_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Compiling source file /RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/Adder_4bit.v
+Presto compilation completed successfully.
+Current design is now '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/Adder_4bit.db:Adder_4bit'
+Loaded 1 design.
+Current design is 'Adder_4bit'.
+Adder_4bit
+current_design $DESIGN
+Current design is 'Adder_4bit'.
+{Adder_4bit}
+#======================================================
+#  Global Setting
+#======================================================
+#set_operating_conditions -max slow -min fast
+#======================================================
+#  Set Design Constraints
+#======================================================
+set_max_delay $MAX_Delay -from [all_inputs] -to [all_outputs]
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+1
+#======================================================
+#  Optimization
+#======================================================
+uniquify
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+compile_ultra
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Loading db file '/RAID2/EDA/synopsys/synthesis/2020.09/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_INVBUF_RVT_TT_08302018.db"
+Analyzing: "/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db"
+Analyzing: "/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_SEQ_RVT_TT_08302018.db"
+Library analysis succeeded.
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.0 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.0 |     *     |
+| asap7sc7p5t_AO_RVT_TT_08302018     | 1.0                     |           |
+| asap7sc7p5t_OA_RVT_TT_08302018     | 1.0                     |           |
+| asap7sc7p5t_INVBUF_RVT_TT_08302018 | 1.0                     |           |
+| asap7sc7p5t_SEQ_RVT_TT_08302018    | 1.0                     |           |
+| asap7sc7p5t_SIMPLE_RVT_TT_08302018 | 1.0                     |           |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'Adder_4bit'
+
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_08302018'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_08302018'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+LNC WARNING: Found output_to_output lib arc on HAxp5_ASAP7_75t_R.
+Loaded alib file './alib-52/asap7sc7p5t_INVBUF_RVT_TT_08302018.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SEQ_RVT_TT_08302018.db.alib' (placeholder)
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Adder_4bit'
+ Implement Synthetic for 'Adder_4bit'.
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Information: Added key list 'DesignWare' to design 'Adder_4bit'. (DDB-72)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELOx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_08302018' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHIx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_08302018' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:41      31.0      0.00       0.0       0.0                           2018.2758
+    0:00:41      31.0      0.00       0.0       0.0                           2018.2758
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:41      31.0      0.00       0.0       0.0                           2018.2758
+    0:00:41      31.0      0.00       0.0       0.0                           2018.2758
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*64, level = 3
+	Fanout cell *cell*64, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*64, level = 3
+	Fanout cell *cell*64, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*64, level = 3
+	Fanout cell *cell*64, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*64, level = 3
+	Fanout cell *cell*64, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*64, level = 3
+	Fanout cell *cell*64, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*64, level = 3
+	Fanout cell *cell*64, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*64, level = 3
+	Fanout cell *cell*64, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*67, level = 3
+	Fanout cell *cell*67, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*67, level = 3
+	Fanout cell *cell*67, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*67, level = 3
+	Fanout cell *cell*67, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*67, level = 3
+	Fanout cell *cell*67, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*67, level = 3
+	Fanout cell *cell*67, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*67, level = 3
+	Fanout cell *cell*67, level = 3
+
+Warning: Unexpected level numbers (Fanout Level is more than Fanin):
+	Optimized cell *cell*67, level = 3
+	Fanout cell *cell*67, level = 3
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:41      26.4     21.91      47.2       0.0                           1627.5328
+    0:00:41      29.9      7.45      16.7       0.0                           1797.9490
+    0:00:41      29.9      7.45      16.7       0.0                           1797.9490
+    0:00:41      29.9      7.45      16.7       0.0                           1797.9490
+    0:00:41      29.9      7.45      16.7       0.0                           1797.9490
+    0:00:41      29.9      7.45      16.7       0.0                           1797.9490
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:41      29.9      6.38      13.4       0.0                           1763.8463
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:41      28.0      0.00       0.0       0.0                           1654.0934
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:41      28.0      0.00       0.0       0.0                           1585.8881
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+    0:00:41      28.0      0.00       0.0       0.0                           1592.6412
+Loading db file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_INVBUF_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db'
+Loading db file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_SEQ_RVT_TT_08302018.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_08302018'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_08302018'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Unable to resolve reference 'NOR2xp67_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'INVxp67_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'NOR2xp33_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'NOR3xp33_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'INVxp33_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'NAND2x1p5_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'AND2x2_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'MAJIxp5_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'FAx1_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Warning: Unable to resolve reference 'XNOR2xp5_ASAP7_75t_R' in 'Adder_4bit'. (LINK-5)
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated black box outputs. (PWR-428)
+1
+#======================================================
+#  Output Reports 
+#======================================================
+report_timing >  Report/$DESIGN\.timing
+Error: could not open output redirect file "Report/Adder_4bit.timing" (CMD-015)
+report_area >  Report/$DESIGN\.area
+Error: could not open output redirect file "Report/Adder_4bit.area" (CMD-015)
+report_resource >  Report/$DESIGN\.resource
+Error: could not open output redirect file "Report/Adder_4bit.resource" (CMD-015)
+#======================================================
+#  Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Error: Unit conflict found: Constraint time unit is 'ns'; main library time unit is 'ps'. (IFS-001)
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/Netlist/Adder_4bit_SYN.v'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/Netlist/Adder_4bit_SYN.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+#======================================================
+#  Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : Adder_4bit
+Version: R-2020.09
+Date   : Wed Nov  2 02:50:58 2022
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_SIMPLE_RVT_TT_08302018 (File: /RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_SIMPLE_RVT_TT_08302018.db)
+    asap7sc7p5t_INVBUF_RVT_TT_08302018 (File: /RAID2/COURSE/DIC/DIC143/hw2/ex2/02_SYN/asap7sc7p5t_INVBUF_RVT_TT_08302018.db)
+
+Number of ports:                           13
+Number of nets:                            28
+Number of cells:                           20
+Number of combinational cells:             20
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          4
+Number of references:                      10
+
+Combinational area:                 27.993600
+Buf/Inv area:                        2.799360
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    27.993600
+Total area:                 undefined
+1
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Adder_4bit
+Version: R-2020.09
+Date   : Wed Nov  2 02:50:58 2022
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_INVBUF_RVT_TT_08302018
+Wire Load Model Mode: top
+
+  Startpoint: B[0] (input port)
+  Endpoint: carry (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  B[0] (in)                                0.00       0.00 f
+  U21/Y (NAND2x1p5_ASAP7_75t_R)           10.04      10.04 r
+  U22/Y (NOR2xp33_ASAP7_75t_R)            16.88      26.92 f
+  U17/Y (NOR3xp33_ASAP7_75t_R)            19.60      46.52 r
+  U13/Y (NOR2xp67_ASAP7_75t_R)            19.16      65.67 f
+  U25/Y (MAJIxp5_ASAP7_75t_R)             14.45      80.12 r
+  U26/Y (INVxp33_ASAP7_75t_R)              6.54      86.66 f
+  carry (out)                              0.00      86.66 f
+  data arrival time                                  86.66
+
+  max_delay                               90.00      90.00
+  output external delay                    0.00      90.00
+  data required time                                 90.00
+  -----------------------------------------------------------
+  data required time                                 90.00
+  data arrival time                                 -86.66
+  -----------------------------------------------------------
+  slack (MET)                                         3.34
+
+
+1
+exit
+
+Memory usage for this session 173 Mbytes.
+Memory usage for this session including child processes 173 Mbytes.
+CPU usage for this session 43 seconds ( 0.01 hours ).
+Elapsed time for this session 45 seconds ( 0.01 hours ).
+
+Thank you...
