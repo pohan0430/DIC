@@ -1,2 +1,2 @@
 # DIC
-Digital Integrated Circuit
+Digital Integrated Circuit Course
